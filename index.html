@@ -132,7 +132,7 @@
     </section>
     <!-- Map -->
     <section id="office-location">
-      <div id="map" class="map" style="width: 100%"></div>
+      <div id="YMapsID" class="map" style="width: 100%"></div>
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-12">
@@ -145,7 +145,7 @@
     <script type="text/javascript">
       ymaps.ready(init);
       function init(){
-        var map = new ymaps.Map("map", {
+        var map = new ymaps.Map("YMapsID", {
           center: [55.740684, 37.618174],
           zoom: 15
         });
