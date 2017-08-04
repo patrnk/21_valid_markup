@@ -1,6 +1,8 @@
 # Site of Real Estate Agency
 
-[TODO. There will be project description]
+A website of a fictional real estate agency.
+
+It makes use of [Stylish Portfolio](https://startbootstrap.com/template-overviews/stylish-portfolio/) Bootstrap theme.
 
 # Project Goals
 
