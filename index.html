@@ -136,23 +136,6 @@
         </div>
       </div>
     </section>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init(){
-        var map = new ymaps.Map("YMapsID", {
-          center: [55.740684, 37.618174],
-          zoom: 15
-        });
-        map.behaviors.disable('scrollZoom');
-        placemark = new ymaps.Placemark([55.740684, 37.618174], {
-          hintContent: 'Твой Дом',
-          balloonContentHeader: 'Твой Дом',
-          balloonContentBody: 'Москва, Старомонетный переулок, 10'
-        });
-        map.geoObjects.add(placemark);
-      }
-    </script>
     <footer>
       <div class="container">
         <div class="row">
@@ -181,33 +164,10 @@
     </footer>
     <!-- Custom Theme JavaScript -->
     <script src="js/jquery.js"></script>
-    <script>
-      // Closes the sidebar menu
-      $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-      });
-      // Opens the sidebar menu
-      $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-      });
-      // Scrolls to the selected menu item on the page
-      $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-    </script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/ymaps_setup.js"></script>
+    <script src="js/toggle_sidebar_menu.js"></script>
+    <script src="js/smooth_scroll.js"></script>
   </body>
 </html>
