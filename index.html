@@ -16,9 +16,9 @@
       <![endif]-->
   </head>
   <body>
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a class="btn btn-dark btn-lg toggle" id="menu-toggle" href="#"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
-      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle" style="position: relative; z-index: 1;"><i class="fa fa-times"></i></a>
+      <a class="btn btn-light btn-lg pull-right toggle" id="menu-close" href="#" style="position: relative; z-index: 1;"><i class="fa fa-times"></i></a>
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
           <a href="#top" onclick="$('#menu-close').click();" style="background: none"><button class="btn-link">Агентство</button></a>
@@ -40,15 +40,15 @@
         </li>
       </ul>
     </nav>
-    <header id="top" class="header">
+    <header class="header" id="top">
       <div class="text-vertical-center">
         <div style="margin: 0; padding: 0; font-size: 4.5em; font-weight: 700;">Твой Дом</div>
         <div style="margin-top: 20; margin-bottom: 10; font-size: 24; font-weight: 500;">Агентство недвижимости</div>
         <br>
-        <a href="#about" class="btn btn-dark btn-lg">Узнать больше >></a>
+        <a class="btn btn-dark btn-lg" href="#about">Узнать больше >></a>
       </div>
     </header>
-    <section id="about" class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -61,7 +61,7 @@
       <!-- /.container -->
     </section>
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section class="services bg-primary" id="services">
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-10 col-lg-offset-1">
@@ -126,12 +126,12 @@
       <!-- /.container -->
     </section>
     <section id="office-location">
-      <div id="YMapsID" class="map" style="width: 100%"></div>
+      <div class="map" id="YMapsID" style="width: 100%"></div>
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-12">
             <h2>Наш офис</h2>
-            <img alt="Фотография офиса, вид с улицы" src="img/office%20place.jpg" width="600" class="img-rounded center-block">
+            <img class="img-rounded center-block" alt="Фотография офиса, вид с улицы" src="img/office%20place.jpg" width="600">
           </div>
         </div>
       </div>
